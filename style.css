@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif; /*default font */
+  margin: 20px; /*spacing around page */
+  line-height: 1.4; /* easy to read */
+  color: black; /* Default text color */
+}
+
+header h1 {
+  font-size: 2em; /* larger main heading */
+  margin: 0 0 12px 0; /*space below heading */
+}
+.number-row {
+  margin: 12px 0 18px 0; /* Space around number nav */
+}
+
+
+.number-block {
+  display: inline-block; /* Align horizontally*/
+  width: 50px; /* fixed width */
+  height: 50px; /* height fixed */
+  line-height: 50px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  color: white; /* Text color for numbers */
+  font-weight: bold; /* bold nums */
+  margin-right: 12px; /* Space between blocks */
+  border-radius: 50%; /* circle nums */
+
+  text-decoration: none; /* Remove underline from links */
+  transition: transform 0.18s ease, box-shadow 0.18s ease; /*hover effects */
+  box-shadow: 0 2px 0 black; /* shadow effect */
+}
+
+.number-block[href="#place1"] { background-color: tomato; } /* Color for first destination */
+.number-block[href="#place2"] { background-color: royalblue; } /* Color for seconddestination */
+.number-block[href="#place3"] { background-color: seagreen; } /* Color for third destination */
+.number-block[href="#place4"] { background-color: goldenrod; } /* Color forfourth destination */
+
+.number-block:hover {
+  transform: translateY(-4px) scale(1.05); /*grow slightly, on hover */
+  box-shadow: 0 6px 12px gray; /* Deep shadow on hover */
+}
+
+
+.destination {
+  display: none; /* Hide sections by default */
+  padding: 10px 0 20px 0; /* Internal space */
+  border-top: 1px solid lightgray; /* Topborder */
+  margin-top: 12px; /* space above section */
+}
+.destination:target {
+  display: block; /*showsection when targeted by anchor */
+  background-color: whitesmoke; /* Highlight section */
+  padding: 14px; /* more padding when shown */
+  border-radius: 6px; /* Round corners */
+}
+
+.destination:first-of-type:target,
+.destination:target,
+body:not(:target) .destination:first-of-type {
+  /* Keeps first section visible if no anchor selected */
+}
+
+.destination h2 {
+  color: darkslategray; /* Heading color */
+  margin-top: 0; /* Removextra top margin */
+}
+
+
+.destination > ol {
+  padding-left: 20px; /* Indent ol */
+}
+
+.destination ul {
+  list-style-type: circle; /* Bullets for city lists */
+  margin-top: 6px; /* Space above list */
+  margin-bottom: 10px; /* Space below list */
+  padding-left: 18px; /* Indent list */
+}
+.note {
+  color: gray; /* Style small notes */
+  font-size: 0.95em; /*smaller text */
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /> <!-- Char encoding for proper text display -->
+  <title>Travel Stories</title> <!-- Page title shown in browser tab -->
+  <link rel="stylesheet" href="style-travel.css" /> <!-- Link CSS for styling -->
+</head>
+
+<body>
+  <header>
+    <h1>Travel Destinations</h1> <!-- Main header of page -->
+  </header>
+
+  <main>
+    <!-- Table showing destination places with images linking to info -->
+    <table class="dest-table" summary="Three travel destinations and attractions">
+      <thead>
+        <tr>
+          <th>Destination</th> <!-- Column header for destination names -->
+          <th>Attraction</th> <!-- Column header for attraction images -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paris</td> <!-- Name of destination -->
+          <td>
+            <a href="#paris-info"> <!-- Link to info-->
+              <img src="images/eiffel.jpg" alt="Eiffel Tower" class="thumb" /> <!-- Eiffel tower image -->
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Rome</td>
+          <td>
+            <a href="#rome-info"> <!-- Link to  info-->
+              <img src="images/colosseum.jpg" alt="Colosseum" class="thumb" /> <!--Colosseum image -->
+            </a>
+          </td>
+        </tr>
+        <tr>
+
+          <td>New York</td>
+          <td>
+            <a href="#ny-info"> <!-- Link to  info -->
+              <img src="images/statue-of-liberty.jpg" alt="Statue of Liberty" class="thumb" /> <!-- Statue of Liberty image -->
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr /> <!-- Horizontal rule separating table from infos -->
+
+    <!-- Infos telling details for each destination -->
+    <section id="paris-info" class="info-block">
+      <h2>Paris (Eiffel Tower)</h2> <!-- Section header -->
+      <p>The Eiffel Tower, located in Paris, is an iconic iron structure. Visitors can enjoy stunning city views from its platforms and take memorable photos.</p> <!-- Description -->
+    </section>
+
+
+    <section id="rome-info" class="info-block">
+      <h2>Rome (Colosseum)</h2> <!-- Section header -->
+      <p>The Colosseum is an ancient amphitheater in Rome, known for its historical significance and grandeur. It remains one of the city’s most famous landmarks.</p> <!-- Description -->
+    </section>
+    <section id="ny-info" class="info-block">
+      <h2>New York (Statue of Liberty)</h2> <!-- Sectionheader -->
+      <p>The Statue of Liberty, located on Liberty Island in New York Harbor, is a symbol of freedom and a major attraction for visitors from around the world.</p> <!-- Description -->
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Return to Home</a></p> <!-- Link back to home -->
+  </footer>
+</body>
+</html>

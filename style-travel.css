@@ -1,0 +1,71 @@
+
+body {
+  font-family: "Helvetica", sans-serif; /* Default font */
+  margin: 22px; /*spacing around page */
+  color: black; /* Default text color */
+}
+
+header h1 {
+  font-size: 2.1em; /* large main heading */
+  margin-bottom: 14px; /* Space below heading */
+}
+
+
+.dest-table {
+  width: 100%; /* Table has full width */
+  border-collapse: collapse; /* no gaps between cells */
+  border: 3px solid teal; /* Outer tabel border */
+  margin-bottom: 20px; /* Space below table */
+}
+
+.dest-table th,
+.dest-table td {
+  border: 1px solid darkslategray; /* Borders for cells */
+  padding: 14px; /* Space in cells */
+  text-align: center; /* Centered text */
+}
+.dest-table thead th {
+  background-color: lightgray; /* Header background */
+  font-weight: 600; /*bold text */
+}
+
+.dest-table tbody tr:nth-child(odd) {
+  background-color: floralwhite; /* Odd row bg color */
+}
+
+.dest-table tbody tr:nth-child(even) {
+
+  background-color: beige; /* Even row bg color */
+}
+
+.thumb {
+  width: 125px; /* Thumbnail width */
+  height: auto; /*keep aspect ratio */
+  display: inline-block; /* Allow inline placement */
+  border-radius: 5px; /* Rounded corners */
+  transition: opacity 0.25s ease, transform 0.18s ease; /* hover effect */
+  border: 1px solid gray; /* Border image */
+}
+
+.thumb:hover {
+  opacity: 0.76; /* fade effect on hover */
+  transform: translateY(-6px); /* Lift image, on hover */
+
+}
+.info-block {
+  margin-top: 20px; /* Space above block */
+  padding: 14px; /* Inner padding */
+  background-color: whitesmoke; /* bg color */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid lightgray; /* Border info */
+}
+.info-block h2 {
+  color: slateblue; /* Heading color */
+  margin-top: 0; /* Remove topmargin */
+}
+
+
+
+footer {
+  margin-top: 22px; /* Space above footer */
+}
